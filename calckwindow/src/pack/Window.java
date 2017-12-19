@@ -7,7 +7,7 @@ import javax.swing.*;
 import javax.swing.border.LineBorder;
 
 public class Window extends JFrame {
-	
+	// тестовый комментарий
 	//общая панель
 	 private JPanel panel0;
 	 //панель проекта

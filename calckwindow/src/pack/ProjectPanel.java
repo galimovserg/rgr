@@ -58,11 +58,17 @@ public class ProjectPanel extends JPanel{
 		String subs;
 		//получаем ширину окна
 		subs=rightpanel.textbox1.getText();
+		//ширина окна
 		int w=0;
+		//высота окна
 		int h=0;
+		//ширина 1 створки
 		int w1=0;
+		//ширина второй створки
 		int w2=0;
+		//ширина третьей створки
 		int w3=0;
+		//ширина четвертой створки
 		int w4=0;
 		
 		
@@ -94,6 +100,8 @@ public class ProjectPanel extends JPanel{
 			return "Неверный формат данных";
 		}
 		//вычисляем ширину второй створки
+		//в зависимости от количества окон
+		//вычитанием из общей ширины окна ширины других створок
 		w2=w;
 		switch(count){
 			case 2:{w2=w2-w1;break;}

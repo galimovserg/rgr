@@ -4,11 +4,11 @@ package pack;
 import java.awt.event.KeyEvent;
 
 import javax.swing.JTextField;
-
+//добавим только слушатель с методом обработки вводимых данных
 public class JTextBoxNum extends JTextField{
+	//максимальная длина
 	private int maxlen=4;
 	JTextBoxNum(){
-		//super();
 		
 		//Добавляем слушатель
 		addKeyListener(new java.awt.event.KeyAdapter() {
@@ -20,10 +20,11 @@ public class JTextBoxNum extends JTextField{
 	 	    	 if(ch=='0'||ch=='1'||ch=='2'||ch=='3'||ch=='4'||ch=='5'||ch=='6'||ch=='7'||ch=='8'||ch=='9'){
 	 	    		//а также ограничение длины
 	 	    		 if(getText().length()==maxlen){
-		 	    		 
+		 	    		 //отбрасываем символ
 	 	    			e.consume();
 		 	    	}
 	 	    	 }else{
+	 	    		 //отбрасываем символ
 	 	    		e.consume();
 	 	    	 }
 	 	      }

@@ -39,8 +39,6 @@ public class TestWindow {
 	public void test2(){
 		//создаем проект, им€ "test", количество створок 3
 		ProjectPanel ProjectTest=new ProjectPanel("test2",3);
-		//вычисл€ем и сравниваем полученные результаты
-		assertEquals(ProjectTest.calck(), "—тоимость: 15792,20 руб.");
 		ProjectTest.leftpanel.comboBox6.setSelectedIndex(1);
 		//вычисл€ем и сравниваем полученные результаты
 		assertEquals(ProjectTest.calck(), "—тоимость: 18792,20 руб.");
